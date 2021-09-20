@@ -7,7 +7,7 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 import DeleteIcon from "@mui/icons-material/Delete";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import moment from "moment";
@@ -45,9 +45,9 @@ const Post = ({ post }) => {
       </CardContent>
       <CardActions className={classes.cardActions}>
         <Button size="small" color="primary" onClick={() => {}}>
-          <ThumbUpOffAltIcon fontSize="small" />
+          <ThumbUpAltIcon fontSize="small" />
           Like
-          {post.likeCount}
+          {` ${post.likeCount}`}
         </Button>
         <Button size="small" color="primary" onClick={() => {}}>
           <DeleteIcon fontSize="small" />
